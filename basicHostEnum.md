@@ -2,7 +2,7 @@
 
 Basic handbook for enumerating a host for vulnerabiltiies and mis-configurations.
 
-##How do I use something?
+## How do I use something?
 
   `<tool> -h --help` Linux/Bash
   
@@ -10,11 +10,11 @@ Basic handbook for enumerating a host for vulnerabiltiies and mis-configurations
   
   `man <tool>` 
 
-##What does it look like on the outside?
+## What does it look like on the outside?
 
   `sudo nmap -sV -sC -Pn <host>  (optionally -p- or -p <specific port>)`
   
-####Nmap vuln scan
+#### Nmap vuln scan
   
   `sudo nmap -sV -Pn --script=smb-vuln* <host> --script=<proto>-vuln*` 
   
@@ -24,7 +24,7 @@ ftp
 ssh
 etc… 
 
-##What does it look like on the inside?
+## What does it look like on the inside?
 
   Users on box
   
