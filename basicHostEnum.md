@@ -40,17 +40,17 @@ See them all with `locate .nse | grep vuln`
   
   `w` 
   
-  What ports are open and what service is running on them?
+ #### What ports are open and what service is running on them?
   
   `netstat -tulpn`    Linux/Bash 
   
   `netstat -abno`     Windows/Powershell - what ports are open and what service is running on them? 
   
-  What does the firewall look like? 
+  ##### What does the firewall look like? 
   
   `iptables -L`
   
-  What programs are running? 
+  #### What programs are running? 
   
   `ps aux`   Linux/Bash
   
@@ -61,3 +61,7 @@ See them all with `locate .nse | grep vuln`
   `ls -lh /bin`  Linux/Bash
   
   `ls C:\program files` & `ls "C:\Program Files (x86)\"`  - Windows/Powershell 
+  
+  `dpkg -l`
+  
+  
