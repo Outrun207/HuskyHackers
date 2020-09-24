@@ -19,10 +19,16 @@ Basic handbook for enumerating a host for vulnerabiltiies and mis-configurations
   `sudo nmap -sV -Pn --script=smb-vuln* <host> --script=<proto>-vuln*` 
   
 Works for common protos
+
 http 
+
 ftp 
+
 ssh
+
 etc… 
+
+See them all with `locate .nse | grep vuln`
 
 ## What does it look like on the inside?
 
