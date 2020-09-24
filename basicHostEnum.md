@@ -46,6 +46,10 @@ See them all with `locate .nse | grep vuln`
   
   `netstat -abno`     Windows/Powershell - what ports are open and what service is running on them? 
   
+  What does the firewall look like? 
+  
+  `iptables -L`
+  
   What programs are running? 
   
   `ps aux`   Linux/Bash
