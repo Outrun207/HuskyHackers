@@ -60,6 +60,8 @@ See them all with `locate .nse | grep vuln`
   
   `ls -lh /bin`  Linux/Bash
   
+  `ls -lh /sbin` Linux/Bash
+  
   `ls C:\program files` & `ls "C:\Program Files (x86)\"`  - Windows/Powershell 
   
   `dpkg -l` -installed packages Debian flavors
