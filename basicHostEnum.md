@@ -17,15 +17,15 @@ This markdown guide is a very basic handbook for enumerating a host from the out
 
   `sudo nmap -sV -Pn --script=smb-vuln* <host> --script=<proto>-vuln*` 
   
-	Works for common protos
+Works for common protos
 	
-  	http 
+http 
 	
-	ftp 
+ftp 
 	
-	ssh
+ssh
 	
-	etc… 
+etc… 
 
 ##What does it look like on the inside?
 
