@@ -14,7 +14,7 @@ Basic handbook for enumerating a host for vulnerabiltiies and mis-configurations
 
   `sudo nmap -sV -sC -Pn <host>  (optionally -p- or -p <specific port>)`
   
-#### Nmap vuln scan
+### Nmap vuln scan
   
   `sudo nmap -sV -Pn --script=smb-vuln* <host> --script=<proto>-vuln*` 
   
@@ -28,35 +28,47 @@ ssh
 
 etc… 
 
-See them all with `locate .nse | grep vuln`
+See all vuln scripts with `locate .nse | grep vuln`
 
 ## What does it look like on the inside?
 
   Users on box
   
-  `cat /etc/passwd`
+  `cat /etc/passwd`  - Linux
   
-  Who’s logged in
+  `net users`  - Windows
   
-  `w` 
+ ### Who’s logged in
   
- #### What ports are open and what service is running on them?
+  `w` - Linux 
   
-  `netstat -tulpn`    Linux/Bash 
+  `quser`  - Windows
+  
+ ### What ports are open and what service is running on them?
+  
+  `sudo netstat -tulpn`    Linux/Bash 
   
   `netstat -abno`     Windows/Powershell - what ports are open and what service is running on them? 
   
-  ##### What does the firewall look like? 
+  ### What does the firewall look like? 
   
   `iptables -L`
   
-  #### What programs are running? 
+  #### iptables cheat sheet
+  
+  `sudo iptables -A INPUT -s x.x.x.x -j DROP`  - block ip address
+  
+  `sudo iptables -A OUTPUT -p tcp -d malware.com -j DROP`  - block outbound to remote site
+  
+  `sudo iptables -A INPUT -p tcp -s 10.0.0.0/8 --dport 22 -j ACCEPT`  - allow ssh from specific ip/cidr
+  
+  ### What programs are running? 
   
   `ps aux`   Linux/Bash
   
   `get-process`   Windows/Powershell 
   
-  What programs are installed? 
+  ### What programs are installed? 
   
   `ls -lh /bin`  Linux/Bash
   
