@@ -20,13 +20,10 @@ Basic handbook for enumerating a host for vulnerabiltiies and mis-configurations
   
 Works for common protos
 
-http 
-
-ftp 
-
-ssh
-
-etc… 
+*http 
+*ftp 
+*ssh
+*etc… 
 
 See all vuln scripts with `locate .nse | grep vuln`
 
