@@ -75,4 +75,20 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   `dpkg -l` -installed packages Debian flavors
   
+  ### What's running at startup? 
   
+  Linux 
+  
+  * rc.local
+  * .bashrc
+  * init.d tab
+  * systemd
+  * crontab
+  
+  Windows 
+  
+  * startup folder
+  * registry
+  * services
+  * scheduled tasks
+
