@@ -39,11 +39,13 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   `net users`  - Windows
   
-  Whos a superuser? 
+  Whos a superuser/what group are they in? 
   
   `cat /etc/sudoers` - Linux
   
   `cat /etc/group` - Linux - check group membership
+  
+  Use a text editor and edit /etc/group to change group membership
   
  ### Who’s logged in
   
@@ -51,7 +53,7 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   `quser`  - Windows
   
- ### get rid of users 
+ ### Delete Users
  
  `userdel <username>` - Linux 
  
