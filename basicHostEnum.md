@@ -39,6 +39,12 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   `net users`  - Windows
   
+  Whos a superuser? 
+  
+  `cat /etc/sudoers` - Linux
+  
+  `cat /etc/group` - Linux - check group membership
+  
  ### Who’s logged in
   
   `w` - Linux 
