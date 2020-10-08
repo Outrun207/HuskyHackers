@@ -33,6 +33,7 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   `cat /etc/passwd`  - Linux all users and services
   `cat /etc/passwd | grep home` - Linux users with a folder in /home
+  `cat /etc/passwd | grep home | egrep -v -f <textFileOneItemPerLine>`
   
   `net users`  - Windows
   
