@@ -31,7 +31,8 @@ See all vuln scripts with `locate .nse | grep vuln`
 
   Users on box
   
-  `cat /etc/passwd`  - Linux
+  `cat /etc/passwd`  - Linux all users and services
+  `cat /etc/passwd | grep home` - Linux users with a folder in /home
   
   `net users`  - Windows
   
