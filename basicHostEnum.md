@@ -45,6 +45,12 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   `quser`  - Windows
   
+ ### get rid of users 
+ 
+ `userdel <username>` - Linux 
+ 
+ `Remove-LocalUser <username>` - Windows/Powershell
+  
  ### What ports are open and what service is running on them?
   
   `sudo netstat -tulpn`    Linux/Bash 
