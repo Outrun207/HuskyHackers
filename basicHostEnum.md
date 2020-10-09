@@ -79,6 +79,10 @@ See all vuln scripts with `locate .nse | grep vuln`
   
   ### What programs are running? 
   
+  Check the Ubuntu software manager - set updates to daily 
+  
+  Set Windows to check for updates daily 
+  
   `ps aux`   Linux/Bash
   
   `get-process`   Windows/Powershell 
