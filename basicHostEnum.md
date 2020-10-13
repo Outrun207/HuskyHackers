@@ -124,6 +124,6 @@ See all vuln scripts with `locate .nse | grep vuln`
 * Browser updated
 * Inseucre programs updated
 * Make sure right programs are available for all users
-* Enable password complexity requiremets - Windows
+* Enable password complexity requiremets - Windows and pam on Linux)
 * Enable windows firewall
 * Remove root access from SSH (permit root login set to no)
