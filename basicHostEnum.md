@@ -114,3 +114,15 @@ See all vuln scripts with `locate .nse | grep vuln`
   * services
   * scheduled tasks
 
+##Hivestorm Checklist
+Forensics Quesiton 
+Removed Unauthorized User
+Checked Admin Group
+Changed insecure password (do it on both boxes)
+Check for daily updates
+Browser updated
+Inseucre programs updated
+Make sure right programs are available for all users
+Enable password complexity requiremets - Windows
+Enable windows firewall
+Remove root access from SSH (permit root login set to no)
