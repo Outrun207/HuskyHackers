@@ -127,3 +127,4 @@ See all vuln scripts with `locate .nse | grep vuln`
 * Enable password complexity requiremets - Windows and pam on Linux)
 * Enable windows firewall
 * Remove root access from SSH (permit root login set to no)
+* Remove "Guide to England"
