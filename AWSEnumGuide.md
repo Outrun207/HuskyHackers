@@ -94,7 +94,7 @@ List an S3 bucket's contents
 
 Get objects 
 
-aws s3api get-object --bucket <bucketName> --profile hacker --key "<object path/name>" 
+`aws s3api get-object --bucket <bucketName> --profile hacker --key "<object path/name>"`
 
 ---
 
