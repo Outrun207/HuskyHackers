@@ -6,7 +6,7 @@
 
 ---
 
-## whoami and what policies are attached/exist? 
+## whoami
 
 `aws sts get-caller-identity --profile hacker`
 
