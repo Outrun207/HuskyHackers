@@ -132,10 +132,6 @@ Stop an instance
 
 `aws ec2 stop-instances --profile hacker --region us-east-1 --instance-ids i-12345678901234567`
 
-Get instance state
-
-`aws ec2 describe-instances --instance-ids i-12345678901234567 --profile hacker --region us-east-1 | jq '.Reservations[].Instances[].State'.`
-
 ---
 
 ## Pacu 
