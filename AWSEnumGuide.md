@@ -108,6 +108,16 @@ Run an instance
 
 `aws ec2 run-instances --image-id ami-01cc34ab2709337aa --instance-type t2.micro --region us-east-1 --profile hacker`
 
+Run instance with userdata script
+
+`aws ec2 run-instances --image-id ami-abcd1234 --count 1 --instance-type m3.medium \
+--key-name my-key-pair --subnet-id subnet-abcd1234 --security-group-ids sg-abcd1234 \
+--user-data file://my_script.txt` 
+
+See instance userdata
+
+`aws ec2 describe-instance-attribute --instance-id i-1234567890abcdef0 --attribute userData` 
+
 Get instance state 
 
 `aws ec2 describe-instances --instance-ids i-12345678901234567 --profile hacker --region us-east-1 | jq '.Reservations[].Instances[].State'` 
