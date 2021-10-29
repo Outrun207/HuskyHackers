@@ -50,6 +50,10 @@ Attach a policy to a role
 
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess --role-name existingRole --profile hacker`
 
+Attach a policy to a user 
+
+`aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess --user-name existingUser --profile hacker`
+
 Overwrite an existing policy version
 
 `aws iam create-policy-version --policy-arn arn:aws:iam::123456789012:policy/MyPolicy --policy-document file://NewPolicyVersion.json --set-as-default`
